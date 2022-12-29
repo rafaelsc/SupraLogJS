@@ -184,7 +184,7 @@ async function applyPackageName({
 async function cleanup({ packageName }: { packageName: string }) {
   await logAsyncTask(
     "Removing dependencies",
-    exec("npm uninstall slugify prompts")
+    exec("yarn uninstall slugify prompts")
   );
 
   await logAsyncTask(

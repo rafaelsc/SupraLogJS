@@ -43,7 +43,7 @@ async function test() {
 async function restore() {
   await exec(`git reset HEAD~ && git checkout . && git clean -df`);
 
-  await exec(`npm install`);
+  await exec(`yarn install`);
 }
 
 async function testNoGrep(pattern: string) {
